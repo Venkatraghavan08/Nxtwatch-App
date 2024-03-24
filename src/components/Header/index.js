@@ -26,7 +26,7 @@ import ThemeAndVideoContext from "../../Context/ThemeAndVideoContext"
 const Header=props=>{
     <ThemeAndVideoContext.Consumer>
         {value=>{
-            const{colorTheme,toggleTheme}-value
+            const{colorTheme,toggleTheme}=value
             const color=isDarkTheme ? '#ffffff' : '#00306e'
             const bgColor = isDarkTheme ? '#231f20' : '#f1f5f9'
             const onChangeTheme=()=>{
@@ -37,7 +37,7 @@ const Header=props=>{
                 Cookies.remove("jwt_token")
                 history.replace('/login')
             }
-            return{
+            return(
                 <NavbarHeader bgColor={bgColor}>
                     <LogoLink to="/">
                         <HeaderLogo src=isDarkTheme? 'https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-dark-theme-img.png'
@@ -108,7 +108,7 @@ const Header=props=>{
                     </ActionsContainer>
                 </NavbarHeader>
 
-            }
+            )
         }}
     </ThemeAndVideoContext.Consumer>
 }
