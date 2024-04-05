@@ -1,10 +1,9 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
-
 import Header from '../Header'
 import NavigationBar from '../NavigationBar'
-import ThemeAndVideoContext from '../../context/ThemeAndVideoContext'
+import ThemeAndVideoContext from '../../Context/ThemeAndVideoContext'
 import FailureView from '../FailureView'
 import PlayVideoView from '../PlayVideoView'
 

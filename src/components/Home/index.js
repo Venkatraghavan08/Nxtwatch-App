@@ -3,10 +3,9 @@ import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 
 import {AiOutlineClose, AiOutlineSearch} from 'react-icons/ai'
-
 import Header from '../Header'
 import NavigationBar from '../NavigationBar'
-import ThemeAndVideoContext from '../../context/ThemeAndVideoContext'
+import ThemeAndVideoContext from '../../Context/ThemeAndVideoContext'
 import HomeVideos from '../HomeVideos'
 import FailureView from '../FailureView'
 
